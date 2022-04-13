@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_study"
+        android:icon="@drawable/ic_school_black_24dp"
+        android:title="@string/title_study" />
+
+    <item
+        android:id="@+id/navigation_quiz"
+        android:icon="@drawable/ic_book_black_24dp"
+        android:title="@string/title_quiz" />
+
+    <item
+        android:id="@+id/navigation_me"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="@string/title_me" />
+
+</menu>

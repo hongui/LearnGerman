@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv_base_input_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textSize="@dimen/sp56"
+        style="@style/WhiteText"
+        android:background="@color/colorPrimary"
+        app:layout_constraintHeight_percent="0.314"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_base_input_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp16"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginRight="@dimen/dp8"
+        style="@style/Title.Meduim"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintRight_toLeftOf="@+id/iv_base_input_clear"
+        app:layout_constraintTop_toBottomOf="@id/tv_base_input_content"/>
+
+    <ImageView
+        android:id="@+id/iv_base_input_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp8"
+        android:layout_marginRight="@dimen/dp16"
+        android:visibility="invisible"
+        app:layout_constraintTop_toTopOf="@id/tv_base_input_result"
+        app:layout_constraintBottom_toBottomOf="@id/tv_base_input_result"
+        app:layout_constraintLeft_toRightOf="@id/tv_base_input_result"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@drawable/ic_close_black_24dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_base_input_items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp16"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_base_input_result"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

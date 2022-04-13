@@ -1,0 +1,66 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">false</item>
+        <item name="android:windowAllowReturnTransitionOverlap">false</item>
+        <item name="android:editTextStyle">@style/NormalText</item>
+        <item name="android:textViewStyle">@style/NormalText</item>
+        <item name="buttonStyle">@style/NormalButton</item>
+    </style>
+
+    <style name="DialogFragment" parent="AlertDialog.AppCompat">
+        <item name="android:windowBackground">@color/alphaGrey</item>
+    </style>
+    <style name="NormalText">
+        <item name="android:textSize">@dimen/sp15</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textColorHint">@color/textSecondColor</item>
+    </style>
+
+    <style name="NormalEdit" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textAppearance">@style/NormalText</item>
+    </style>
+
+    <style name="Title" parent="NormalText">
+        <item name="android:textSize">@dimen/sp18</item>
+    </style>
+
+    <style name="Title.Meduim">
+        <item name="android:textSize">@dimen/sp24</item>
+    </style>
+
+    <style name="WhiteText" parent="NormalText">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="WhiteText.Title">
+        <item name="android:textSize">@dimen/sp18</item>
+    </style>
+
+    <style name="WhiteText.Title.Big">
+        <item name="android:textSize">@dimen/sp32</item>
+    </style>
+
+    <style name="WhiteText.Title.Meduim">
+        <item name="android:textSize">@dimen/sp24</item>
+    </style>
+
+    <style name="NormalButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:textSize">@dimen/sp15</item>
+        <item name="android:enabled">true</item>
+    </style>
+
+    <style name="Appbar" parent="Base.ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <style name="TextButton" parent="Widget.MaterialComponents.Button.TextButton"/>
+</resources>
